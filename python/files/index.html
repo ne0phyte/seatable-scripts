@@ -1,0 +1,518 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <link rel="canonical" href="https://seatable.github.io/seatable-scripts/python/files/">
+      
+      
+        <meta name="author" content="seatable">
+      
+      <link rel="shortcut icon" href="../../assets/seatable-favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.2">
+    
+    
+      
+        <title>Files - SeaTable Scripts Programming Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.19190aaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.24b84193.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ff6e42">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-orange" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#files" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://seatable.github.io/seatable-scripts/" title="SeaTable Scripts Programming Manual" class="md-header-nav__button md-logo" aria-label="SeaTable Scripts Programming Manual">
+      
+  <img src="../../assets/logo32_32.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            SeaTable Scripts Programming Manual
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Files
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/seatable/seatable-scripts/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    seatable/seatable-scripts
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://seatable.github.io/seatable-scripts/" title="SeaTable Scripts Programming Manual" class="md-nav__button md-logo" aria-label="SeaTable Scripts Programming Manual">
+      
+  <img src="../../assets/logo32_32.png" alt="logo">
+
+    </a>
+    SeaTable Scripts Programming Manual
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/seatable/seatable-scripts/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    seatable/seatable-scripts
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../data-structure/" class="md-nav__link">
+      Data structure
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../base.md" class="md-nav__link">
+      Base
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../output.md" class="md-nav__link">
+      Output
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../utils.md" class="md-nav__link">
+      Utils
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-downlaod-link-by-path" class="md-nav__link">
+    get downlaod link by path
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-file-upload-link" class="md-nav__link">
+    get file upload link
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-file" class="md-nav__link">
+    download file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-file-in-memory" class="md-nav__link">
+    upload file in memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-local-file" class="md-nav__link">
+    upload local file
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/seatable/seatable-scripts/edit/master/docs/python/files.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h1>
+<p>This document will show you how to upload/download files through the Base object</p>
+<p>If you do not yet understand the Base object, please refer to this document</p>
+<ul>
+<li><a href="../base/">Base</a></li>
+</ul>
+<h4 id="get-downlaod-link-by-path">get downlaod link by path<a class="headerlink" href="#get-downlaod-link-by-path" title="Permanent link">&para;</a></h4>
+<p>Get the file download link</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># path: The relative path of the file in the Base</span>
+<span class="n">base</span><span class="o">.</span><span class="n">get_file_download_link</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+</code></pre></div>
+
+<h5>Example</h5>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Suppose you get the url of a file from Base&#39;s data:</span>
+<span class="c1"># https://dev.seafile.com/dtable-web/workspace/74/asset-preview/41cd05da-b29a-4428-bc31-bd66f4600817/files/2020-10/aur7e-jqc19.zip</span>
+<span class="c1"># The way to get the download link is:</span>
+<span class="n">download_link</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">get_file_download_link</span><span class="p">(</span><span class="s1">&#39;files/2020-10/aur7e-jqc19.zip&#39;</span><span class="p">)</span>
+<span class="c1"># If you want to download, use this link to download, in the example, using the requests library, which you can do with other libraries</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">download_link</span><span class="p">)</span>
+</code></pre></div>
+
+<h4 id="get-file-upload-link">get file upload link<a class="headerlink" href="#get-file-upload-link" title="Permanent link">&para;</a></h4>
+<p>Get the upload link to upload the file, return a dictionary with the upload link in it
+When you upload, requires two parameters, parent_dir and relative_path, please see the example for details</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># return a dict</span>
+<span class="c1"># {</span>
+<span class="c1">#     &quot;parent_path&quot;: &quot;xxxxx&quot;,</span>
+<span class="c1">#     &quot;upload_link&quot;: &quot;https://xxxxxx&quot;</span>
+<span class="c1"># }</span>
+<span class="n">base</span><span class="o">.</span><span class="n">get_file_upload_link</span><span class="p">()</span>
+</code></pre></div>
+
+<h5>Example</h5>
+<div class="codehilite"><pre><span></span><code><span class="n">upload_link_dict</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">get_file_upload_link</span><span class="p">()</span>
+<span class="c1"># Upload files, use the requests library, you can use other library operations</span>
+<span class="n">parent_dir</span> <span class="o">=</span> <span class="n">upload_link_dict</span><span class="p">[</span><span class="s1">&#39;parent_path&#39;</span><span class="p">]</span>
+<span class="n">upload_link</span> <span class="o">=</span> <span class="n">upload_link_dict</span><span class="p">[</span><span class="s1">&#39;upload_link&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;?ret-json=1&#39;</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">upload_link</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="p">{</span>
+    <span class="s1">&#39;parent_dir&#39;</span><span class="p">:</span> <span class="n">parent_dir</span><span class="p">,</span>
+    <span class="s1">&#39;relative_path&#39;</span><span class="p">:</span> <span class="n">relative_path</span><span class="p">,</span>
+    <span class="s1">&#39;replace&#39;</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">replace</span> <span class="k">else</span> <span class="mi">0</span>  <span class="c1"># Do you want to replace if the file with the same name has been uploaded</span>
+<span class="p">},</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span>
+    <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">))</span>  <span class="c1"># The file to be uploaded</span>
+<span class="p">})</span>
+</code></pre></div>
+
+<p>Pure API operation is very simple, but if it is a complete operation, such as:</p>
+<p>Intercept path, get download link, download, save</p>
+<p>Or</p>
+<p>Get upload link, read the file, set parameters, upload</p>
+<p>If the code is more rigorous, you must also check the status of each request in the middle, etc.</p>
+<p>Very cumbersome, so the following will show the upload/download file API after wrap the above process for your use</p>
+<h4 id="download-file">download file<a class="headerlink" href="#download-file" title="Permanent link">&para;</a></h4>
+<p>Download the file</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Save the file to the path save_path</span>
+<span class="n">base</span><span class="o">.</span><span class="n">download_file</span><span class="p">(</span><span class="n">file_url</span><span class="p">,</span> <span class="n">save_path</span><span class="p">)</span>
+</code></pre></div>
+
+<h5>Example</h5>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Download the file to this file path</span>
+<span class="n">base</span><span class="o">.</span><span class="n">download_file</span><span class="p">(</span><span class="s1">&#39;https://dev.seafile.com/dtable-web/workspace/74/asset-preview/41cd05da-b29a-4428-bc31-bd66f4600817/files/2020-10/screen%20(3).png&#39;</span><span class="p">,</span> <span class="s1">&#39;files/screen.png&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<h4 id="upload-file-in-memory">upload file in memory<a class="headerlink" href="#upload-file-in-memory" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="c1"># name: File name after upload</span>
+<span class="c1"># content: File contents, is a bytes object</span>
+<span class="c1"># relative_path: Upload relative path, is the path of the Base&#39;s attachments</span>
+<span class="c1"># file_type: image or file, default is file</span>
+<span class="c1"># relative_path and file_type cannot be Note at the same time, if relative_path is None, the value is {file_type}s/{today-month}, like: files/2020-09</span>
+<span class="c1"># replace: Whether to replace if there is a file with the same name in the directory</span>
+<span class="c1"># return: Return the info dict of the uploaded file</span>
+<span class="c1"># {</span>
+<span class="c1">#     &#39;type&#39;: str,</span>
+<span class="c1">#     &#39;size&#39;: int,</span>
+<span class="c1">#     &#39;name&#39;: str,</span>
+<span class="c1">#     &#39;url&#39;: str</span>
+<span class="c1"># }</span>
+<span class="n">base</span><span class="o">.</span><span class="n">upload_bytes_file</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">content</span><span class="p">:</span> <span class="nb">bytes</span><span class="p">,</span> <span class="n">relative_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+
+<h5>Example</h5>
+<div class="codehilite"><pre><span></span><code><span class="n">reponse</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://xxxxxx.png&#39;</span><span class="p">)</span>
+<span class="n">info_dict</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">upload_bytes_file</span><span class="p">(</span><span class="s1">&#39;file.png&#39;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="n">file_type</span><span class="o">=</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file.png&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">info_dict</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">upload_bytes_file</span><span class="p">(</span><span class="s1">&#39;file.png&#39;</span><span class="p">,</span> <span class="n">content</span><span class="p">,</span> <span class="n">file_type</span><span class="o">=</span><span class="s1">&#39;image&#39;</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># If you need to update row</span>
+<span class="c1"># Update the image column, assuming that the picture column named img, then:</span>
+<span class="n">row</span><span class="p">[</span><span class="s1">&#39;img&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">info_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">))</span>
+<span class="n">base</span><span class="o">.</span><span class="n">update_row</span><span class="p">(</span><span class="s1">&#39;TableName&#39;</span><span class="p">,</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;_id&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">)</span>
+
+<span class="c1"># Update the file column, assuming that the file column named file, then:</span>
+<span class="n">row</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">info_dict</span><span class="p">)</span>
+<span class="n">base</span><span class="o">.</span><span class="n">update_row</span><span class="p">(</span><span class="s1">&#39;TableName&#39;</span><span class="p">,</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;_id&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">)</span>
+
+<span class="c1"># Of course, if there is no picture/file column in that row, then:</span>
+<span class="n">row</span><span class="p">[</span><span class="s1">&#39;img&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">info_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">)]</span>
+<span class="c1"># row[&#39;file&#39;] = [info_dict]</span>
+<span class="n">base</span><span class="o">.</span><span class="n">update_row</span><span class="p">(</span><span class="s1">&#39;TableName&#39;</span><span class="p">,</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;_id&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">)</span>
+
+<span class="c1"># If insert a new row</span>
+<span class="n">row</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;img&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">info_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">)],</span>
+    <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">info_dict</span><span class="p">]</span>
+<span class="p">}</span>
+<span class="n">base</span><span class="o">.</span><span class="n">append_row</span><span class="p">(</span><span class="s1">&#39;real-img-files&#39;</span><span class="p">,</span> <span class="n">row</span><span class="p">)</span>
+</code></pre></div>
+
+<h4 id="upload-local-file">upload local file<a class="headerlink" href="#upload-local-file" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="c1"># file_path: The file path</span>
+<span class="c1"># name: File name after upload, if it is None, it is the name of the file</span>
+<span class="c1"># relative_path: Upload relative path, is the path of the Base&#39;s attachments</span>
+<span class="c1"># file_type: image or file，default is file</span>
+<span class="c1"># relative_path and file_type cannot be Note at the same time, if relative_path is None, the value is {file_type}s/{today-month}, like files/2020-09</span>
+<span class="c1"># replace: Whether to replace if there is a file with the same name in the directory</span>
+<span class="c1"># return: Return the info dict of the uploaded file</span>
+<span class="c1"># {</span>
+<span class="c1">#     &#39;type&#39;: str,</span>
+<span class="c1">#     &#39;size&#39;: int,</span>
+<span class="c1">#     &#39;name&#39;: str,</span>
+<span class="c1">#     &#39;url&#39;: str</span>
+<span class="c1"># }</span>
+<span class="n">base</span><span class="o">.</span><span class="n">upload_local_file</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">relative_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file_type</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+
+<h5>Example</h5>
+<div class="codehilite"><pre><span></span><code><span class="n">info_dict</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">upload_local_file</span><span class="p">(</span><span class="s1">&#39;files/file.png&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;upload.png&#39;</span><span class="p">,</span> <span class="n">relative_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">file_type</span><span class="o">=</span><span class="s1">&#39;image&#39;</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># If you need to update row, please refer to the example of upload file in memory</span>
+</code></pre></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2020 seatable
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/seatable/seatable-scripts/" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
